@@ -3,14 +3,13 @@
 // ecma script - defining standards for js
 
 // Premitive data types (Call by value, updates copy) -
-// *number - 2^53
+// *number - range 2^53
+const score = 200; // number variable
+const total = new Number(500); // number variable using constructor
 
 // *string - ''/""
 const firstName = 'ananya'; // string variable
-
-// declare and initialize using new keyword
-// this makes the string as key value pair object, having default prototype methods
-const middleName = new String('shekhar');
+const middleName = new String('shekhar'); // string variable using constructor
 
 // string interpolation
 console.log(`My name is ${firstName} ${middleName}`);
