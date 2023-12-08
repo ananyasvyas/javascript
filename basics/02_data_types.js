@@ -2,7 +2,7 @@
 
 // ecma script - defining standards for js
 
-// Premitive data types -
+// Premitive data types (Call by value, updates copy) -
 // number - 2^53
 // string - ''/""
 // boolean - true/false
@@ -16,3 +16,13 @@ let age = 4;
 typeof(age); // number
 typeof(null) // object
 typeof(undefined) // undefined
+
+// symbol example
+const id = Symbol('123');
+
+// Non premitive (reference) data types
+// Array
+// Object
+// Function
+function demo (){}
+typeof(demo()); // object function
