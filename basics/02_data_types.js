@@ -65,6 +65,10 @@ console.log(arr.join()); // 1,2,3
 
 // slice and splice
 // both return section of array, slice does not include extreme range, splice includes extreme range; slice does not manipulate the origional array, splice manipulated the origional array
+const sliceArray = arr.slice(0, 2); // [1, 2]
+console.log(arr); // [1, 2, 3]
+const spliceArray = arr.splice(0, 1); // [1, 2]
+console.log(arr); // [3]
 // 1. array-copy operations create shallow copy, where properties share same reference.
 // Object
 // Function
