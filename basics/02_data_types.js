@@ -70,6 +70,7 @@ const obj = { // object declaration and initialization (literal)
     mail: 'ananya@mail.com',
     isLoggedIn: 'false'
 }
+const singeltonObj = new Object(); // singelton object
 // use symbol data type in object
 const objId = Symbol('231');
 const objWithSymbol = {
@@ -86,6 +87,11 @@ objWithSymbol.greeting; // Function reference
 objWithSymbol.greeting(); // I am a function inside oject
 // Lock value of object using freeze
 Object.freeze(objWithSymbol); // cannot modify object
+// merge/combine objects
+const firstObj = {1: 'a'};
+const secondObj = {2: 'b'};
+console.log(Object.assign(firstObj, secondObj)); // {1: 'a', 2: 'b'}
+console.log(Object.assign({}, firstObj, secondObj)); // suggested way to provide target
 
 // Function
 function demo (){}
