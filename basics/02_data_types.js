@@ -92,7 +92,11 @@ const firstObj = {1: 'a'};
 const secondObj = {2: 'b'};
 console.log(Object.assign(firstObj, secondObj)); // {1: 'a', 2: 'b'}
 console.log(Object.assign({}, firstObj, secondObj)); // suggested way to provide target
-
+// destructuring
+const {name} = obj;
+console.log(name); // ananya
+const {name: mn} = obj; // alias name for any key
+console.log(mn); // ananya
 // Function
 function demo (){}
 typeof(demo()); // object function
