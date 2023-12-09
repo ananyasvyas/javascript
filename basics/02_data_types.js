@@ -100,3 +100,9 @@ console.log(mn); // ananya
 // Function
 function demo (){}
 typeof(demo()); // object function
+// set default value to funtion param
+function loginMessage(username = 'user') {
+    return `${username} is logged in`
+}
+console.log(loginMessage('ananya')); // ananya is logged in
+console.log(loginMessage()); // user is logged in
