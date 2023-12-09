@@ -49,6 +49,23 @@ const id = Symbol('123');
 
 // Non premitive (reference) data types
 // Array
+const arr = [1, 2 ,3];
+const arrOne = new Array(1, 2, 3);
+
+// unshift - inserts element in start of array (shifts all other elements)
+arr.unshift(0);
+console.log(arr); // [0, 1, 2, 3]
+
+// shift - pops first element from the array
+arr.shift();
+console.log(arr); // [1, 2 ,3]
+
+// join - adds all elements to create a string
+console.log(arr.join()); // 1,2,3
+
+// slice and splice
+// both return section of array, slice does not include extreme range, splice includes extreme range; slice does not manipulate the origional array, splice manipulated the origional array
+// 1. array-copy operations create shallow copy, where properties share same reference.
 // Object
 // Function
 function demo (){}
