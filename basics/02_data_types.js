@@ -69,6 +69,13 @@ const sliceArray = arr.slice(0, 2); // [1, 2]
 console.log(arr); // [1, 2, 3]
 const spliceArray = arr.splice(0, 1); // [1, 2]
 console.log(arr); // [3]
+
+// *flat - Returns a new array with all sub-array elements concatenated into it upto specified dept or infinity for all depths
+const multiLevelArray = [1, 2, 3, [4, 5], 6, [7, [5, 6, 7]]];
+console.log(multiLevelArray.flat(Infinity)) // [1, 2, 3, 4, 5, 6, 7, 5, 6, 7]
+
+// from - creates array from string
+console.log(Array.from('Hi')); // ['H', 'i'];
 // 1. array-copy operations create shallow copy, where properties share same reference.
 // Object
 // Function
