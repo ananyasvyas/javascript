@@ -1,4 +1,4 @@
-document.getElementById('title'); // <h1 id="title" class="Heading">I am a H1 Heading</h1>
+document.getElementById('title'); // <h2 id="title" class="Heading">I am a h2 Heading</h2>
 document.getElementById('title').id; // 'title'
 document.getElementById('title').className; // 'Heading'
 document.getElementById('title').getAttribute('id'); // 'title'
@@ -8,15 +8,15 @@ title.style.backgroundColor = 'orange';
 title.style.padding = '10px';
 document.getElementById('inner-heading').style.display = 'none';
 // displays only visible content
-title.innerText; // I am a H1 Heading
+title.innerText; // I am a h2 Heading
 // displays all content
-title.textContent; // I am a H1 Heading of the page
+title.textContent; // I am a h2 Heading of the page
 // returns the html content of the element
-title.innerHTML; // 'I am a H1 Heading <span id="inner-heading" style="display: none;">of the page</span>'
+title.innerHTML; // 'I am a h2 Heading <span id="inner-heading" style="display: none;">of the page</span>'
 // querySelector returns the first identified element from the page; it returns only one value;
-document.querySelector('h1'); // <h1 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a H1 Heading<span id="inner-heading" style="display: none;">of the page</span></h1>
-document.querySelector('#title'); // <h1 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a H1 Heading<span id="inner-heading" style="display: none;">of the page</span></h1>
-document.querySelector('.Heading'); // <h1 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a H1 Heading<span id="inner-heading" style="display: none;">of the page</span></h1>
+document.querySelector('h2'); // <h2 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a h2 Heading<span id="inner-heading" style="display: none;">of the page</span></h2>
+document.querySelector('#title'); // <h2 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a h2 Heading<span id="inner-heading" style="display: none;">of the page</span></h2>
+document.querySelector('.Heading'); // <h2 id="title" class="page-heading Heading" style="background-color: orange; padding: 10px;">I am a h2 Heading<span id="inner-heading" style="display: none;">of the page</span></h2>
 // get first child from unordered-list
 const ul = document.querySelector('ul'); // returns unordered list
 ul.querySelector('li:first-child'); // returns first li element
